@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotson Detailing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-navbar">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo-holder">
+            <img src="/dotsonlogo.jpg" alt="Dotson Detailing">
+        </div>
+        <div class="nav-items-holder">
+            <ul class="nav-items">
+                <li><a href="#" class="selected">Home</a></li>
+                <li><a href="#" id="services-item">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><button class="contact-button" id="contact-button">Contact Us</button></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="slide-menu">
+        <div class="exit-icon">&times;</div>
+        <ul class="slide-nav-items">
+            <li><a href="#" class="selected">Home</a></li>
+            <li><a href="#" id="services-item">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <input id="submit" type="submit" value="Submit">
+              </form>
+              <h2>Or Call Us</h2>
+              <a href="tel:5809800949">469-500-2909</a>
+        </ul>
+    </div>
+    <div id="contact-form" style="display:none;">
+        <div id="exit-icon">&times;</div>
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br><br>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+        <h2>Or Call Us</h2>
+        <a href="tel:5809800949">469-500-2909</a>
+    </div>    
+    <section class="section-1">
+        <div class="hero-img">
+            <img src="/maincar.jpg" alt="#" class="main-car">
+            <div class="slogan-text">
+                <span class="word-1">EVERY</span>
+                <span class="word-2">DETAIL</span>
+                <span class="word-3">MATTERS</span>
+            </div>
+            <div class="chevron-button">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+    <section class="gap"></section>
+    <section class="section-2">
+        <div class="section-2-container">
+            <div class="left-side-services">
+                <h2 class="services-title">Services</h2>
+                <h1>Select Details</h1>
+                <form>
+                <label for="vehicle-type">Vehicle Type:</label>
+                <select id="vehicle-type">
+                    <option value="">Please select a vehicle type</option>
+                    <option value="sedan">Sedans/Coupes</option>
+                    <option value="truck">Trucks/SUVs</option>
+                </select>
+                <br><br>
+                <label for="detail-type">Detail Type:</label>
+                <select id="detail-type">
+                    <option value="">Please select a detail type</option>
+                    <option value="full">Full Detail</option>
+                    <option value="exterior">Exterior Detail</option>
+                    <option value="interior">Interior Detail</option>
+                </select>
+                <input type="button" id="generateBtn" value="Estimate Price" onclick="calculatePrice()">
+                <!-- <h2>Estimated Price</h2> -->
+                <h2 id="output"></h2>
+                </form>
+            </div>
+            <div class="right-side-services">
+                <div class="img">
+                    <img id="detailing" src="/detailing.jpg" alt="Detailing">
+                    <img id="car" src="/car.jpg" alt="Car">
+                    <img id="truck" src="/truck.jpg" alt="Truck">
+                    <img id="carinterior" src="/carinterior.jpg" alt="Car Interior">
+                    <img id="truckinterior" src="/truck interior.jpg" alt="Truck Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="app.js"></script>    
+</body>
+</html>
