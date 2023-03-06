@@ -463,7 +463,7 @@ html, body{
   }
   
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .main-car {
         width: 100%;
         height: 200px;
