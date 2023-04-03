@@ -165,3 +165,13 @@ const selectedDetailType = detailType.value;
 });
   
 
+// ABout Us
+window.addEventListener('scroll', function() {
+  var aboutUs = document.getElementById('about-us');
+  var position = aboutUs.getBoundingClientRect().top;
+  var screenHeight = window.innerHeight;
+  
+  if (position < screenHeight && position > 0) {
+    aboutUs.classList.add('active');
+  }
+});

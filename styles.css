@@ -672,3 +672,35 @@ html, body{
     }
 }
 
+.container {
+    padding: 10px;
+  }
+
+  #about {
+    text-align: center;
+    margin: 0;
+  }
+  
+  #about h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }  
+  
+  #about-us {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1s ease-out;
+  }
+  
+  #about-us.active {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
