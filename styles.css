@@ -431,6 +431,10 @@ html, body{
       letter-spacing: 2px;
       font-weight: bold;
     }
+    .hero-img img{
+        width: 360px;
+        height: 360px;
+    }
   }
 
 
